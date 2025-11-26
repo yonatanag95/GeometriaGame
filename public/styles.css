@@ -1,0 +1,290 @@
+body {
+    background: url("assets/ui/background.png");
+    background-size: cover;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+}
+
+.screen { margin-top: 60px; }
+.hidden { display: none; }
+
+#game {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.option {
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.option:hover { background: rgba(255,255,255,0.4); }
+
+.correct { background: #55ff55 !important; }
+.wrong { background: #ff5555 !important; }
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #2294ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/* --------------------------
+   Diseños para celulares
+   -------------------------- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: 16px;
+        margin-top: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #pregunta {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .opcion {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* ---------------------------------------------------
+   ESTILOS GENERALES
+--------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* ---------------------------------------------------
+   CONTENEDORES PRINCIPALES
+--------------------------------------------------- */
+#menu, #game {
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ---------------------------------------------------
+   INPUTS DEL MENU
+--------------------------------------------------- */
+input {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+/* Botón principal */
+button, .btn {
+    display: block;
+    width: 90%;
+    padding: 15px;
+    margin: 15px auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: #ffbd59;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #c98a32;
+    transition: transform 0.1s;
+}
+
+button:active, .btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 0 #927027;
+}
+
+/* ---------------------------------------------------
+   IMAGEN DE LA FIGURA
+--------------------------------------------------- */
+#figure-img {
+    max-width: 80%;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 12px;
+    background: #ffffff22;
+    padding: 10px;
+}
+
+/* ---------------------------------------------------
+   OPCIONES DE RESPUESTA
+--------------------------------------------------- */
+.option {
+    background: #ffffffdd;
+    color: #333;
+    margin: 10px auto;
+    padding: 12px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #aaa;
+    transition: 0.2s;
+}
+
+/* Cuando el usuario toca una opción */
+.option:active {
+    transform: scale(0.95);
+}
+
+/* Correcto */
+.correct {
+    background: #4caf50 !important;
+    color: white;
+}
+
+/* Incorrecto */
+.wrong {
+    background: #e63737 !important;
+    color: white;
+}
+
+/* ---------------------------------------------------
+   BOTÓN SIGUIENTE
+--------------------------------------------------- */
+#next-btn {
+    display: block;
+    margin-top: 20px;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE PARA CELULARES
+--------------------------------------------------- */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    #menu, #game {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #figure-img {
+        max-width: 100%;
+    }
+
+    .option {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    button, .btn {
+        font-size: 1.3rem;
+        padding: 15px;
+        width: 100%;
+    }
+
+    input {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE PARA TABLETS
+--------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    .option {
+        font-size: 1.4rem;
+        padding: 18px;
+    }
+}
+.drag-options {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.drag-item {
+    padding: 12px 20px;
+    background: #ffffffaa;
+    color: #333;
+    border-radius: 10px;
+    cursor: grab;
+    font-weight: bold;
+    user-select: none;
+    font-size: 1.2rem;
+}
+
+.drop-target {
+    width: 80%;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 20px;
+    border: 3px dashed white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    background: #ffffff22;
+}
+
+

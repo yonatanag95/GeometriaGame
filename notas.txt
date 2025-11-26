@@ -1,0 +1,56 @@
+GeometriaGame
+│
+├─ Backend (Node.js + SQLite)
+│   ├─ server.js
+│   ├─ database.sqlite
+│   └─ Funciones:
+│       • Registrar alumno
+│       • Guardar progreso
+│       • Consultar progreso
+│
+├─ Frontend (HTML/CSS/JS)
+│   ├─ index.html (pantalla de menú)
+│   ├─ app.js (lógica del juego)
+│   ├─ styles.css (estilos)
+│   └─ assets/
+│       ├─ img/ (figuras geométricas)
+│       └─ ui/ (fondos, botones, elementos visuales)
+│
+├─ Módulos del Juego
+│   ├─ Menú de ingreso (nombre, curso)
+│   ├─ Pantalla de juego
+│   │   • Preguntas interactivas
+│   │   • Imágenes de figuras
+│   │   • Opciones de respuesta
+│   │   • Puntaje
+│   │   • Botón “Siguiente”
+│   ├─ Niveles
+│   │   • Nivel 1: figuras básicas (triángulo, cuadrado, círculo)
+│   │   • Nivel 2: pentágono, hexágono
+│   │   • Nivel 3+: actividades de área, perímetro, simetría
+│   └─ Final del juego / Game Over / Victory
+│
+├─ Funcionalidades futuras
+│   ├─ Sistema de ranking
+│   │   • Mostrar puntaje por curso
+│   │   • Ranking global
+│   ├─ Panel docente
+│   │   • Ver progreso de alumnos
+│   │   • Exportar datos
+│   ├─ Diseño visual tipo videojuego
+│   │   • Fondos animados
+│   │   • Botones arcade
+│   │   • Animaciones y efectos
+│   ├─ Sonidos y música
+│   │   • Efectos correct/incorrect
+│   │   • Música de fondo
+│   ├─ Drag & Drop y manipulación de figuras
+│   ├─ Responsive / tablets
+│   └─ Empaquetado multiplataforma
+│       • Electron (PC)
+│       • PWA / APK (Android)
+│
+└─ Versionado y documentación
+    ├─ Git para control de versiones
+    ├─ README.md con guía de uso
+    └─ Registro de niveles y figuras
