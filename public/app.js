@@ -38,7 +38,7 @@ async function registrarAlumno() {
     const nombre = document.getElementById("nombre").value;
     const curso = document.getElementById("curso").value;
 
-    const r = await fetch("http://localhost:3000/api/alumnos", {
+    const r = await fetch("https://geometriagame.onrender.com/api/alumnos", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ nombre, curso })
@@ -120,7 +120,7 @@ addTouchClick(document.getElementById("next-btn"), () => {
 });
 
 async function guardarNivel() {
-    await fetch("http://localhost:3000/api/progreso", {
+    await fetch("https://geometriagame.onrender.com/api/alumnos", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
